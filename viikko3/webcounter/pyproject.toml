@@ -1,25 +1,18 @@
-[project]
+[tool.poetry]
 name = "webcounter"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "Matti Luukkainen",email = "mluukkai@iki.fi"}
-]
-license = {text = "MIT"}
-requires-python = "^3.12"
+description = "Webcounter project"
+authors = ["Matti Luukkainen <mluukkai@iki.fi>"]
+license = "MIT"
+packages = [{ include = "src" }]
 
-dependencies = [
-    "flask (>=3.1.2,<4.0.0)"
-]
+[tool.poetry.dependencies]
+python = ">=3.12,<4.0"
+flask = "^3.1.2"
 
-[dependency-groups]
-dev = [
-    "robotframework (>=7.3.2,<8.0.0)",
-    "robotframework-seleniumlibrary (>=6.8.0,<7.0.0)"
-]
-
-[tool.poetry]
-package-mode = false
+[tool.poetry.group.dev.dependencies]
+robotframework = "^7.3.2"
+robotframework-seleniumlibrary = "^6.8.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

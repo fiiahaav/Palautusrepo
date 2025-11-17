@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.3 on linux)" generated="2025-11-17T22:48:54.643273" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/home/fiiahaav/palautusrepo/viikko3/webcounter/src/tests">
+<suite id="s1-s1" name="Increment" source="/home/fiiahaav/palautusrepo/viikko3/webcounter/src/tests/increment.robot">
+<kw name="Open And Configure Browser" owner="resource" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-17T22:48:55.057516" elapsed="0.000374"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-17T22:48:55.058347" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2025-11-17T22:48:56.038103" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-11-17T22:48:56.038365" level="FAIL">SessionNotCreatedException: Message: session not created
+from unknown error: no chrome binary at /usr/bin/google-chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x64ae8021ce3a &lt;unknown&gt;
+#1 0x64ae7fccc79b &lt;unknown&gt;
+#2 0x64ae7fd075d9 &lt;unknown&gt;
+#3 0x64ae7fd0633f &lt;unknown&gt;
+#4 0x64ae7fd559bc &lt;unknown&gt;
+#5 0x64ae7fd55136 &lt;unknown&gt;
+#6 0x64ae7fd46d73 &lt;unknown&gt;
+#7 0x64ae7fd1335c &lt;unknown&gt;
+#8 0x64ae7fd14051 &lt;unknown&gt;
+#9 0x64ae801e713f &lt;unknown&gt;
+#10 0x64ae801ea258 &lt;unknown&gt;
+#11 0x64ae801d081c &lt;unknown&gt;
+#12 0x64ae801eaa1e &lt;unknown&gt;
+#13 0x64ae801b931e &lt;unknown&gt;
+#14 0x64ae8020af18 &lt;unknown&gt;
+#15 0x64ae8020b134 &lt;unknown&gt;
+#16 0x64ae8021bafc &lt;unknown&gt;
+#17 0x7e57edfc0ac3 &lt;unknown&gt;
+</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-11-17T22:48:55.058090" elapsed="0.982562">SessionNotCreatedException: Message: session not created
+from unknown error: no chrome binary at /usr/bin/google-chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x64ae8021ce3a &lt;unknown&gt;
+#1 0x64ae7fccc79b &lt;unknown&gt;
+#2 0x64ae7fd075d9 &lt;unknown&gt;
+#3 0x64ae7fd0633f &lt;unknown&gt;
+#4 0x64ae7fd559bc &lt;unknown&gt;
+#5 0x64ae7fd55136 &lt;unknown&gt;
+#6 0x64ae7fd46d73 &lt;unknown&gt;
+#7 0x64ae7fd1335c &lt;unknown&gt;
+#8 0x64ae7fd14051 &lt;unknown&gt;
+#9 0x64ae801e713f &lt;unknown&gt;
+#10 0x64ae801ea258 &lt;unknown&gt;
+#11 0x64ae801d081c &lt;unknown&gt;
+#12 0x64ae801eaa1e &lt;unknown&gt;
+#13 0x64ae801b931e &lt;unknown&gt;
+#14 0x64ae8020af18 &lt;unknown&gt;
+#15 0x64ae8020b134 &lt;unknown&gt;
+#16 0x64ae8021bafc &lt;unknown&gt;
+#17 0x7e57edfc0ac3 &lt;unknown&gt;
+</status>
+</kw>
+<status status="FAIL" start="2025-11-17T22:48:55.056810" elapsed="0.984168">SessionNotCreatedException: Message: session not created
+from unknown error: no chrome binary at /usr/bin/google-chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x64ae8021ce3a &lt;unknown&gt;
+#1 0x64ae7fccc79b &lt;unknown&gt;
+#2 0x64ae7fd075d9 &lt;unknown&gt;
+#3 0x64ae7fd0633f &lt;unknown&gt;
+#4 0x64ae7fd559bc &lt;unknown&gt;
+#5 0x64ae7fd55136 &lt;unknown&gt;
+#6 0x64ae7fd46d73 &lt;unknown&gt;
+#7 0x64ae7fd1335c &lt;unknown&gt;
+#8 0x64ae7fd14051 &lt;unknown&gt;
+#9 0x64ae801e713f &lt;unknown&gt;
+#10 0x64ae801ea258 &lt;unknown&gt;
+#11 0x64ae801d081c &lt;unknown&gt;
+#12 0x64ae801eaa1e &lt;unknown&gt;
+#13 0x64ae801b931e &lt;unknown&gt;
+#14 0x64ae8020af18 &lt;unknown&gt;
+#15 0x64ae8020b134 &lt;unknown&gt;
+#16 0x64ae8021bafc &lt;unknown&gt;
+#17 0x7e57edfc0ac3 &lt;unknown&gt;
+</status>
+</kw>
+<test id="s1-s1-t1" name="At start the counter is zero" line="7">
+<status status="FAIL" start="2025-11-17T22:48:56.041118" elapsed="0.000498">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created
+from unknown error: no chrome binary at /usr/bin/google-chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x64ae8021ce3a &lt;unknown&gt;
+#1 0x64ae7fccc79b &lt;unknown&gt;
+#2 0x64ae7fd075d9 &lt;unknown&gt;
+#3 0x64ae7fd0633f &lt;unknown&gt;
+#4 0x64ae7fd559bc &lt;unknown&gt;
+#5 0x64ae7fd55136 &lt;unknown&gt;
+#6 0x64ae7fd46d73 &lt;unknown&gt;
+#7 0x64ae7fd1335c &lt;unknown&gt;
+#8 0x64ae7fd14051 &lt;unknown&gt;
+#9 0x64ae801e713f &lt;unknown&gt;
+#10 0x64ae801ea258 &lt;unknown&gt;
+#11 0x64ae801d081c &lt;unknown&gt;
+#12 0x64ae801eaa1e &lt;unknown&gt;
+#13 0x64ae801b931e &lt;unknown&gt;
+#14 0x64ae8020af18 &lt;unknown&gt;
+#15 0x64ae8020b134 &lt;unknown&gt;
+#16 0x64ae8021bafc &lt;unknown&gt;
+#17 0x7e57edfc0ac3 &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-s1-t2" name="When button pressed twice the counter is two" line="12">
+<status status="FAIL" start="2025-11-17T22:48:56.041919" elapsed="0.000323">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created
+from unknown error: no chrome binary at /usr/bin/google-chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x64ae8021ce3a &lt;unknown&gt;
+#1 0x64ae7fccc79b &lt;unknown&gt;
+#2 0x64ae7fd075d9 &lt;unknown&gt;
+#3 0x64ae7fd0633f &lt;unknown&gt;
+#4 0x64ae7fd559bc &lt;unknown&gt;
+#5 0x64ae7fd55136 &lt;unknown&gt;
+#6 0x64ae7fd46d73 &lt;unknown&gt;
+#7 0x64ae7fd1335c &lt;unknown&gt;
+#8 0x64ae7fd14051 &lt;unknown&gt;
+#9 0x64ae801e713f &lt;unknown&gt;
+#10 0x64ae801ea258 &lt;unknown&gt;
+#11 0x64ae801d081c &lt;unknown&gt;
+#12 0x64ae801eaa1e &lt;unknown&gt;
+#13 0x64ae801b931e &lt;unknown&gt;
+#14 0x64ae8020af18 &lt;unknown&gt;
+#15 0x64ae8020b134 &lt;unknown&gt;
+#16 0x64ae8021bafc &lt;unknown&gt;
+#17 0x7e57edfc0ac3 &lt;unknown&gt;
+</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-17T22:48:56.042910" elapsed="0.000219"/>
+</kw>
+<status status="FAIL" start="2025-11-17T22:48:54.695459" elapsed="1.347738">Suite setup failed:
+SessionNotCreatedException: Message: session not created
+from unknown error: no chrome binary at /usr/bin/google-chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x64ae8021ce3a &lt;unknown&gt;
+#1 0x64ae7fccc79b &lt;unknown&gt;
+#2 0x64ae7fd075d9 &lt;unknown&gt;
+#3 0x64ae7fd0633f &lt;unknown&gt;
+#4 0x64ae7fd559bc &lt;unknown&gt;
+#5 0x64ae7fd55136 &lt;unknown&gt;
+#6 0x64ae7fd46d73 &lt;unknown&gt;
+#7 0x64ae7fd1335c &lt;unknown&gt;
+#8 0x64ae7fd14051 &lt;unknown&gt;
+#9 0x64ae801e713f &lt;unknown&gt;
+#10 0x64ae801ea258 &lt;unknown&gt;
+#11 0x64ae801d081c &lt;unknown&gt;
+#12 0x64ae801eaa1e &lt;unknown&gt;
+#13 0x64ae801b931e &lt;unknown&gt;
+#14 0x64ae8020af18 &lt;unknown&gt;
+#15 0x64ae8020b134 &lt;unknown&gt;
+#16 0x64ae8021bafc &lt;unknown&gt;
+#17 0x7e57edfc0ac3 &lt;unknown&gt;
+</status>
+</suite>
+<status status="FAIL" start="2025-11-17T22:48:54.644202" elapsed="1.399681"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="2" skip="0">Tests</stat>
+<stat name="Increment" id="s1-s1" pass="0" fail="2" skip="0">Tests.Increment</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
