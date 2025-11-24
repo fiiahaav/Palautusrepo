@@ -12,8 +12,7 @@ class TestKauppa(unittest.TestCase):
         self.varasto_mock = Mock()
 
         # palautetaan aina arvo 42
-        viitegeneraattori_mock.uusi.return_value = 42
-
+        self.viitegeneraattori_mock.uusi.return_value = 42
         self.varasto_mock.saldo.side_effect = lambda tuote_id: 10 if tuote_id in [1,2] else 0
         
         
@@ -23,17 +22,17 @@ class TestKauppa(unittest.TestCase):
                 return Tuote(1, "maito", 5)
             elif tuote_id == 2:
                 return Tuote(2, "leipä", 3)
-            self.varasto_mock.hae_tuote.side_effect = varasto_hae_tuote
+        self.varasto_mock.hae_tuote.side_effect = varasto_hae_tuote
 
         self.kauppa = Kauppa(self.varasto_mock, self.pankki_mock, self.viitegeneraattori_mock)
         
     def test_yksi_tuote(self):
-            # Yksi tuote ostoskoriin
-            self.kauppa.aloita_asiointi()
-            self.kauppa.lisaa_koriin(1)
-            self.kauppa.tilimaksu("pekka", "12345")
-            # Varmistetaan, että tilisiirto kutsuttu oikein
-            self.pankki_mock.tilisiirto.assert_called_with("pekka", 42, "12345", ANY, 5)
+        # Yksi tuote ostoskoriin
+        self.kauppa.aloita_asiointi()
+        self.kauppa.lisaa_koriin(1)
+        self.kauppa.tilimaksu("pekka", "12345")
+        # Varmistetaan, että tilisiirto kutsuttu oikein
+        self.pankki_mock.tilisiirto.assert_called_with("pekka", 42, "12345", ANY, 5)
 
     def test_kaksi_eri_tuotetta(self):
         # Kaksi eri tuotetta ostoskoriin
